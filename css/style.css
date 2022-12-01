@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none ;
+    list-style-type: none;
+   
+}
+
+
+body{
+    font-family: transducer, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* === Cursor Style  ===*/
+#cursor{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #101010;
+    box-sizing: border-box;
+    transition: 0.1s ease ;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: #101010;
+}
+
+h1:hover ~ #cursor{
+    width: 50px;
+    height: 50px;
+    animation: animate 5s #101010;
+    border: 2px dashed #101010;
+    scale: 2;
+}
+
+
+
+.logo{
+    color: #101010 !important;
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.mynav{
+    border-bottom: 1px solid black;
+    color: black !important;
+    background-color: white !important;
+    background: url(/assests/noise.png);
+    width: 100%;
+    position: fixed;
+    height: 8vh;
+    z-index: 1;
+}
+
+.btn{
+    color: white!important;
+    background-color:black ;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin-right: 40px;
+    font-size: 8px;
+}
+
+.mylist{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+
+.mylist li a{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 40px;
+    color: black;
+}
+
+
+.mylogo{
+    border-right: 1px solid #101010;
+    height: 53px;
+    text-align: center;
+    padding-right: 50px;
+    color: white !important;
+    position: fixed;
+}
+
+.mylogo a{                  
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px !important;
+    position: absolute;
+    top: -7%;
+    left: 60%;
+}
+.mylogo2 a{
+position: absolute;
+top: -5%;
+left: 90%;
+}
+
+/* ================================
+section
+===================== */
+
+.first{
+    background: url(/assests/noise.png);
+    height: 80vh;
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between; */
+    /* align-items: center; */
+}
+
+@media (max-width:700px) {
+    .first{
+        display: block !important;
+    }
+
+
+
+    .first-div{
+        border-bottom: 1px solid black;
+        border-right:none !important;
+        width: 100% !important;
+        height: 300px !important;
+       
+    }
+
+
+
+    .second-div{
+        border-bottom: 1px solid black;
+        /* border-right: 1px solid black; */
+        width: 100% !important;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+}
+
+
+.first-div{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    width: 50%;
+    height: 550px;
+
+}
+
+
+
+.text-loop h1{
+    position: absolute;
+    font-size: 80px !important;
+    font-weight: 800 !important;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+
+
+.bryhim{
+    /* color: red; */
+}
+
+.hi{
+    /* color: blueviolet;?? */
+}
+
+.second-div{
+    border-bottom: 1px solid black;
+    /* border-right: 1px solid black; */
+    width: 50%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.second-div:hover ~ #cursor{
+    width: 100px;
+    height: 100px;
+}
+
+.second-div-upper{
+    background: url(/assests/noise.png);
+    border-bottom: 1px solid #101010;
+  margin-top: 50px;
+  width: 100%;
+  z-index: 2;
+}
+.second-div-middle{
+    height: 100px;
+
+}
+.second-div-below{
+    background: url(/assests/noise.png);
+    border-top: 1px solid #101010;
+    width: 100%;
+    /* z-index: 2; */
+}
+
+.second-div-middle{
+    background: url(/assests/my_iphone_006-removebg-preview.png);
+    height: 500px;
+    width: 500px;
+    /* z-index: 50; */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 7.5%;
+    left: 57%;
+}
+
+
+.below-div-text{
+    background: url(/assests/noise.png);
+    border-bottom: 1px solid #101010;
+    text-align: center;
+    height: 132px;
+    width: 100%;
+    padding: 20px;
+}
+.below-div-text h1{
+    margin-top: 30px !important;
+    font-weight: 900;
+    font-size: 40px ;
+    text-transform: uppercase;
+}
+
+
+
+    /* .star{
+        margin-top: 120px;
+    } */
+
+
+.rotate{
+    position: relative;
+    margin-top: 90px;
+    margin-left: 18%;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -5;
+    border: 2px solid #101010;
+}
+.rotate-logo{
+    /* position: absolute; */
+    width: 200px;
+    height: 200px;
+    border: 2px solid #101010;
+    border-radius: 50%;
+}
+
+
+.rotate-text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: 5s ease all;
+    
+}
+.rotate-text span{
+    position: absolute;
+    left: 50%;
+    margin-top: 5px;
+    font-size: 0.7em;
+    transform-origin: 0 150px;
+    font-weight: 900;
+    z-index: -1 !important;
+}
+.rotate-text span:hover{
+  color: blueviolet;
+}
+
+
